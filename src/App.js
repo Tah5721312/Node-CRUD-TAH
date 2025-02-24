@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3001;
 const mongoose = require("mongoose");
 app.use(express.urlencoded({ extended: true }));
-const User = require("./models/customerSchema");
+const User = require("../models/customerSchema");
 app.set("view engine", "ejs");
 app.use(express.static('public'))
 var moment = require('moment'); 
